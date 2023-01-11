@@ -271,6 +271,7 @@ img {
     color: black;
     width: 60%;
     margin: 0.6rem;
+    margin-left: auto;
     padding: 0.6rem;
     border-radius: 5px;
 }
