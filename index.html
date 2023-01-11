@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="site-title" id="sitetitle">
+                <a href="index.html">
+                    <h1>Chat Room</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="authdiv">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="password" placeholder="Password">
+        <div class="button">
+            <button id="login">Login</button>
+            <button id="create">Create</button>
+        </div>
+    </div>
+    <div class="chatdiv">
+        <div class="maindiv">
+            <div class="mainlink">
+                <div class="link"></div>
+                <button id="logout">Logout</button>
+            </div>
+            <div class="upload">
+                <div class="uploaded"></div>
+                <div class="data">
+                    <!-- <label for="fromdevicefiles" class="fromdevice">
+                        <input type="file" id="fromdevicefiles" multiple>
+                        <img src="" id="upload" alt="">
+                    </label> -->
+                    <input type="text" id="txt">
+                    <div class="send">
+                        <button id="sendmsg">Senden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <p>©2023 Ligatip Tirol</p>
+          <p class="refs"><a href="">Kontakt</a> | <a href="">Impressum</a> | <a href="">Datenschutz</a> | <a
+              href="">Datenschutzeinstellungen</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
