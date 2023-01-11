@@ -46,6 +46,7 @@ signup.addEventListener("click", function () {
         // Signed in 
         const user = userCredential.user
         console.log("created user")
+        location.reload()
     })
     .catch((error) => {
         console.log("nope bro")
@@ -58,6 +59,7 @@ signin.addEventListener("click", function () {
         // Signed in 
         const user = userCredential.user
         console.log("logged in")
+        location.reload()
     })
     .catch((error) => {
         console.log("nope bro")
@@ -105,7 +107,6 @@ onAuthStateChanged(auth, (user) => {
                             msgdiv.appendChild(msg)
                             msgdiv.appendChild(msgdivname)
                     }
-
                 }
 
                 if (change.type === "modified") {
@@ -115,6 +116,9 @@ onAuthStateChanged(auth, (user) => {
                     console.log("Removed city: ", change.doc.data())
                 }
             })
+            // window.setTimeout(function() {
+            //     window.location.reload()
+            // }, 500)
         })
 
         document.getElementsByClassName("send")[0].addEventListener("click", async function () {
