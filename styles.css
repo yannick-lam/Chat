@@ -519,6 +519,8 @@ img {
 @media (min-width: 600px) {
     .sidebar-header {
         flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5%;
         min-height: 3rem;
     }
 

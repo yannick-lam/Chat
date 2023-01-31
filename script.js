@@ -161,7 +161,7 @@ onAuthStateChanged(auth, (user) => {
             // await is used, so function has t be async
             const docRef = await addDoc(collection(db, "messages"), {
                 value: document.getElementById("txt").value,
-                time: time,
+                time: user.metadata.creationTime,
                 sentby: user.email
             })
             document.getElementById("txt").value = ""
