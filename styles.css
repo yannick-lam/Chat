@@ -17,7 +17,7 @@ header {
     /* border: 3px solid red; */
     width: 100vw;
     height: 110px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -171,10 +171,9 @@ header {
     border-radius: 20px;
     background-color: rgba(30, 110, 150, 0.7);
     /* box-shadow: 2px 2px 5px rgb(50, 50, 50); */
-    margin-top: 0.7rem;
     padding: 0.4rem 1.5rem;
     letter-spacing: 0.8px;
-    margin: 0;
+    margin-left: 0.3rem;
 }
 
 
@@ -355,11 +354,12 @@ img {
     /* border: 3px solid yellow; */
     background-color: rgba(20, 60, 80, 0.7);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    height: 3rem;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    min-height: 3.5rem;
 }
 
 .sidebar-header span {
@@ -373,8 +373,10 @@ img {
     color: white;
     border: 1pt solid white;
     border-radius: 3px;
-    padding: 0.2rem 0.8rem;
+    /* padding: 0.2rem 0.8rem; */
+    padding: 0.2rem;
     letter-spacing: 0.8px;
+    margin: 0;
 }
 
 .sidebar-body {
@@ -413,10 +415,10 @@ img {
 
 .sidebar-user-img {
     background-color: white;
-    min-width: 2.5rem;
-    height: 2.5rem;
+    min-width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
 }
 
 .sidebar-user {
@@ -462,7 +464,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    height: 3rem;
+    min-height: 3.5rem;
 }
 
 .chat-header span {
@@ -512,6 +514,27 @@ img {
 
 .type-msg::placeholder {
     color: rgba(30, 30, 30, 0.8);
+}
+
+@media (min-width: 600px) {
+    .sidebar-header {
+        flex-direction: row;
+        min-height: 3rem;
+    }
+
+    #logout {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .sidebar-user-img {
+        min-width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.7rem;
+    }
+
+    .chat-header {
+        min-height: 3rem;
+    }
 }
 
 /*================
