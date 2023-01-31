@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Web Chat</title>
 </head>
 
 <body>
@@ -14,41 +14,71 @@
         <div class="container">
             <div class="site-title" id="sitetitle">
                 <a href="index.html">
-                    <h1>Chat Room</h1>
+                    <h1>Web Chat</h1>
                 </a>
             </div>
         </div>
     </header>
 
-    <div class="authdiv">
-        <input type="text" id="username" placeholder="Username">
-        <input type="text" id="password" placeholder="Password">
+    <div class="authdiv login-form" id="login-form">
+        <p>Web Chat</p>
+        <input type="email" id="mail" placeholder="E-Mail" required>
+        <input type="password" id="password" placeholder="Password" required>
         <div class="button">
             <button id="login">Login</button>
-            <button id="create">Create</button>
+            <p class="p-info">You do not have an account? <a id="register-btn">Register</a></p>
         </div>
     </div>
-    <div class="chatdiv">
-        <div class="maindiv">
-            <div class="mainlink">
-                <div class="link"></div>
+
+    <div class="authdiv signup-form" id="signup-form">
+        <p>Web Chat</p>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="reg-mail" placeholder="E-Mail" required>
+        <input type="password" id="reg-password" placeholder="Password" required>
+        <div class="button">
+            <button id="create">Register</button>
+            <p class="p-info">You do have an account? <a id="login-btn">Login</a></p>
+        </div>
+    </div>
+
+    <div class="webchat">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <span class="loggedInPerson"></span>
                 <button id="logout">Logout</button>
             </div>
-            <div class="upload">
-                <div class="uploaded"></div>
-                <div class="data">
-                    <!-- <label for="fromdevicefiles" class="fromdevice">
-                        <input type="file" id="fromdevicefiles" multiple>
-                        <img src="" id="upload" alt="">
-                    </label> -->
-                    <input type="text" id="txt">
-                    <div class="send">
-                        <button id="sendmsg">Senden</button>
+            <div class="sidebar-body">
+                <input type="text" class="find-user" placeholder="Find a user">
+                <div class="sidebar-user-container">
+                    <div class="sidebar-user-img"></div>
+                    <div class="sidebar-user">
+                        <div class="sidebar-user-name">
+                            <span>name</span>
+                        </div>
+                        <div class="sidebar-user-msg">
+                            <span>message</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <span>name</span>
+                <button>new</button>
+            </div>
+            <div class="chat-body">
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="txt" class="type-msg" placeholder="Type a message...">
+                <div class="send">
+                    <button id="sendmsg">send</button>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <footer>
         <div class="footer-container">
